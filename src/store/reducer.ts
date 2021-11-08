@@ -17,7 +17,7 @@ const initialState: ArticleState = {
   ],
 }
 
-const reducer = (state: ArticleState = initialState, action: ArticleAction): ArticleState {
+const reducer = (state: ArticleState = initialState, action: ArticleAction): ArticleState => {
   switch (action.type) {
     case actionTypes.ADD_ARTICLE:
       const newArticle: IArticle = {
